@@ -6,7 +6,7 @@ An extremely simplistic cli tool to emit amazon ec2 events. This might be useful
 usage
 -----
 
-$ make
-$ cd bin
-$ ./aws-ec2-events -key=<aws access key id> -secret=<aws secret access key>
+  $ make
+  $ cd bin
+  $ ./srcaws-ec2-events -key=<aws access key id> -secret=<aws secret access key>
 
