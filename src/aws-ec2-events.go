@@ -35,11 +35,12 @@ func main() {
 						fmt.Println("Name: ", colour.Colourize(tag.Value, colour.FgYellow))
 					}
 				}
-				r2, err := elastic_compute_cloud.DescribeInstanceStatus([]string{instance.InstanceId}, false, nil)
+				//http://docs.aws.amazon.com/AWSEC2/latest/APIReference/ApiReference-query-DescribeInstanceStatus.html
+				r, err := elastic_compute_cloud.DescribeInstanceStatus([]string{instance.InstanceId}, false, nil)
 				if err != nil {
 					fmt.Println(err)
 				}
-				for _, instance_set := range r2.InstanceStatusSet {
+				for _, instance_set := range r.InstanceStatusSet {
 					fmt.Println("\tAvailability Zone: ", instance_set.AvailabilityZone)
 					fmt.Println("\tInstance State:    ", instance_set.InstanceState.Name)
 					fmt.Println("\tSystem Status:     ", instance_set.SystemStatus.Name)
