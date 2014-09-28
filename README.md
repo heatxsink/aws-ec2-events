@@ -8,5 +8,5 @@ usage
 
 	$ make
 	$ cd bin
-	$ ./srcaws-ec2-events -key=<aws access key id> -secret=<aws secret access key>
+	$ ./aws-ec2-events -key=<aws access key id> -secret=<aws secret access key>
 
