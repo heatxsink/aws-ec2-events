@@ -3,7 +3,7 @@ aws-ec2-events
 
 An extremely simplistic cli tool to emit amazon ec2 events. This might be useful with this whole aws reboot "gate".
 
-usage
+Usage
 -----
 
 	$ make
